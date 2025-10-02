@@ -57,10 +57,10 @@ export default function Navbar() {
 
             {/* Right section - Buttons */}
             <div className="flex items-center gap-3">
-              <button className="px-6 py-2 text-blue-600 font-medium hover:bg-blue-50 rounded-lg">
+              <button className="px-6 py-2 text-[#2A5EB1] font-medium hover:bg-blue-50 rounded-lg">
                 Post a job
               </button>
-              <button className="px-6 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700">
+              <button className="px-6 py-2 bg-[#2A5EB1] text-white font-medium rounded-lg hover:bg-blue-700">
                 Sign in
               </button>
             </div>

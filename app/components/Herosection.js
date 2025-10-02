@@ -4,11 +4,11 @@ import { Menu, Search, Mic } from "lucide-react"; // icons
 export default function Herosection() {
   
   return (
-   <section className="bg-blue-600">
-        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+   <section className="bg-[#2A5EB1]">
+        <div className="max-w-9xl mx-auto px-10 sm:px-6 lg:px-8 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
-            <div className="text-white">
+            <div className="text-white ml-6 mr-6">
               <h1 className="text-5xl font-bold mb-6 leading-tight">
                 Find Verified Workers &<br />Quality Tools
               </h1>
