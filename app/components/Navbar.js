@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Sidebar from "./Sidebar";
 import { useState } from "react";
 import { Menu, Search, Mic } from "lucide-react"; // icons
 
@@ -12,7 +13,8 @@ export default function Navbar() {
             {/* Left section - Menu and Logo */}
             <div className="flex items-center gap-4">
               <button className="p-2 hover:bg-gray-100 rounded-lg">
-                <Menu className="w-6 h-6 text-gray-700" />
+                {/* <Menu className="w-6 h-6 text-gray-700" /> */}
+                <Sidebar/>
               </button>
               <div className="flex items-center gap-2">
                 
