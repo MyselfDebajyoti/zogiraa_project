@@ -4,7 +4,7 @@ import { BrowseByCategorySection } from "./components/BrowseByCategorySection";
 import { WhatAreLookingSection } from "./components/WhatAreLookingSection";
 import { TodayHotDeals } from "./components/TodayHotDeals";
 import { BuyGoods } from "./components/BuyGoods";
-import { ServiceCenter } from "./components/ServiceCenter";
+import { PopularServices } from "./components/PopularServices";
 export default function Home() {
   return (
     <>
@@ -15,7 +15,8 @@ export default function Home() {
       <WhatAreLookingSection />
       <TodayHotDeals />
       <BuyGoods />
-      <ServiceCenter />
+      <PopularServices />
+      
       
     </div>
     </>
