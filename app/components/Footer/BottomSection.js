@@ -8,8 +8,8 @@ export default function BottomSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           {/* Contact Us */}
-          <div className="bg-grey-500 rounded-lg p-6 shadow-md">
-            <h3 className="text-lg font-bold mb-4 flex items-center gap-2 text-blue-600">
+          <div className="bg-[#E5E7EB] rounded-lg p-6 shadow-md">
+            <h3 className="text-lg font-bold mb-4 flex items-center gap-2 text-[#2A5EB1]">
               <Phone className="w-5 h-5" /> Contact Us
             </h3>
             <ul className="space-y-3 text-sm text-gray-700">
@@ -22,26 +22,28 @@ export default function BottomSection() {
                 <div>
                   <span className="font-semibold">HQ: Mumbai, Maharashtra</span>
                   <br />
-                  <a href="#" className="text-blue-600 text-xs">
+                  <a href="#" className="text-[#2A5EB1] text-xs">
                     View State Offices
                   </a>
                 </div>
               </li>
-              <li>
-                <button className="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg w-full justify-center">
-                  <MessageCircle className="w-4 h-4" /> WhatsApp Support
-                </button>
-              </li>
               <li className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-blue-600" />
+              <MessageCircle className="w-4 h-4 text-green-600" />
+              <button className="bg-[#16A34A] text-white px-4 py-2 rounded-lg justify-center">
+                WhatsApp Support
+              </button>
+            </li>
+
+              <li className="flex items-center gap-2 text-[#2A5EB1]">
+                <Mail className="w-4 h-4 text-[#2A5EB1]" />
                 <a href="mailto:support@zogiraa.com">support@zogiraa.com</a>
               </li>
             </ul>
           </div>
 
           {/* Subscribe for Updates */}
-          <div className="bg-white rounded-lg p-6 shadow-md">
-            <h3 className="text-lg font-bold mb-4 flex items-center gap-2 text-blue-600">
+          <div className="bg-[#E5E7EB] rounded-lg p-6 shadow-md">
+            <h3 className="text-lg font-bold mb-4 flex items-center gap-2 text-[#2A5EB1]">
               <Mail className="w-5 h-5" />
               Subscribe for Updates
             </h3>
@@ -52,50 +54,81 @@ export default function BottomSection() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full px-4 py-2 rounded-lg border border-gray-300 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-2 rounded-lg bg-[#D1D5DB] border border-gray-300 text-black focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
               <input
                 type="tel"
                 placeholder="Mobile number"
-                className="w-full px-4 py-2 rounded-lg border border-gray-300 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-2 rounded-lg bg-[#D1D5DB] border border-gray-300 text-black focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
-              <button className="w-full bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+              <button className="w-full bg-[#2A5EB1] text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition">
                 Subscribe Now
               </button>
             </div>
           </div>
 
           {/* Experience Zogiraa on Mobile */}
-          <div className="bg-white rounded-lg p-6 shadow-md">
-            <h3 className="text-lg font-bold mb-4 flex items-center gap-2 text-blue-600">
+          <div className="bg-[#E5E7EB] rounded-lg p-6 shadow-md">
+            <h3 className="text-lg font-bold mb-4 flex items-center gap-2 text-[#2A5EB1]">
               <Phone className="w-5 h-5" />
               Experience Zogiraa on Mobile
             </h3>
             <p className="text-sm mb-4 text-gray-600">
               Scan the QR to download or visit stores
             </p>
-            <div className="bg-white rounded-lg p-4 mb-4 inline-block border-2 border-gray-300">
-              <div className="w-32 h-32 bg-black rounded-lg flex items-center justify-center">
-                <span className="text-white text-xs">QR Code</span>
+
+            {/* QR + Buttons side by side */}
+            <div className="flex flex-col sm:flex-row items-center gap-6">
+              {/* QR Code */}
+              <div className="bg-white rounded-lg p-4 border-2 border-gray-300">
+                <div className="w-32 h-32 bg-white rounded-lg flex items-center justify-center">
+                  <div>
+                    <img
+                      src="./img27.png"
+                      alt="Handshake between employer and worker"
+                      className="rounded-xl w-[565px] h-[300px] object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Store Buttons */}
+              <div className="flex flex-col space-y-3">
+                <button
+                  className="flex items-center justify-center gap-2 bg-black text-white transition"
+                  style={{
+                    width: "107.9375px",
+                    height: "40px",
+                    borderRadius: "8px",
+                    opacity: 1,
+                  }}
+                >
+                  <div className="text-left leading-tight">
+                    {/* <div className="text-[10px]">Download on the</div> */}
+                    <div className="text-xs font-semibold">App Store</div>
+                  </div>
+                </button>
+
+                <button
+                  className="flex items-center justify-center gap-2 bg-green-600 text-white transition hover:bg-green-700"
+                  style={{
+                    width: "107.9375px",
+                    height: "40px",
+                    borderRadius: "8px",
+                    opacity: 1,
+                  }}
+                >
+                  <span className="text-sm">▶</span>
+                  <div className="text-left leading-tight">
+                    {/* <div className="text-[10px]">GET IT ON</div> */}
+                    <div className="text-xs font-semibold">Play Store</div>
+                  </div>
+                </button>
               </div>
             </div>
-            <div className="space-y-2">
-              <button className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition w-full">
-                <span className="text-2xl"></span>
-                <div className="text-left">
-                  <div className="text-xs">Download on the</div>
-                  <div className="font-semibold">App Store</div>
-                </div>
-              </button>
-              <button className="flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition w-full">
-                <span className="text-2xl">▶</span>
-                <div className="text-left">
-                  <div className="text-xs">GET IT ON</div>
-                  <div className="font-semibold">Play Store</div>
-                </div>
-              </button>
-            </div>
           </div>
+
+
 
         </div>
       </div>
