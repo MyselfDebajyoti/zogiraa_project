@@ -15,10 +15,10 @@ export function TestimonialSection({
           <div>
             <h2 className="text-4xl font-bold mb-4 text-gray-900">
               {title} <br />
-              <span className="text-blue-600">{subtitle}</span>
+              <span className="text-[#2A5EB1]">{subtitle}</span>
             </h2>
             <p className="text-lg text-gray-600 mb-8">{description}</p>
-            <button className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+            <button className="flex items-center gap-2 px-6 py-3 bg-[#2A5EB1] text-white font-semibold rounded-lg hover:bg-blue-700 transition">
               <Play className="w-5 h-5 fill-white" />
               Watch Now
             </button>

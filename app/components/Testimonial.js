@@ -1,6 +1,6 @@
 import { TestimonialSection } from "./TestimonialSection";
 
-export default function testimonial() {
+export default function Testimonial() {
   return (
     <div>
       <TestimonialSection

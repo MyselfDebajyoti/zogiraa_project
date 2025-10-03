@@ -11,8 +11,8 @@ export function ProductCard({ name, price, imageUrl }) {
       {/* Product Details */}
       <div className="p-4">
         <h3 className="text-xl font-bold text-gray-900 mb-2">{name}</h3>
-        <p className="text-2xl font-bold text-blue-600 mb-4">{price}</p>
-        <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors">
+        <p className="text-2xl font-bold text-[#2A5EB1] mb-4">{price}</p>
+        <button className="w-full bg-[#2A5EB1] text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors">
           Add to Cart
         </button>
       </div>
