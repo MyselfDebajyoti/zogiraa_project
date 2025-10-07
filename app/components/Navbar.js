@@ -21,7 +21,7 @@ export default function Navbar() {
               <Image
                   src="/logo_zogira_2.png"
                   alt="Zogiraa Logo"
-                  width={210.72}
+                  width={100}
                   height={32}
                 />
                 
