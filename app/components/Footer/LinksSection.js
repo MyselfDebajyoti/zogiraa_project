@@ -1,5 +1,6 @@
 "use client";
 import { Menu, User, CheckCircle, Shield, Award } from "lucide-react";
+import Link from "next/link";
 
 export default function LinksSection() {
   return (
@@ -13,12 +14,12 @@ export default function LinksSection() {
               <Menu className="w-5 h-5" /> At Zogiraa
             </h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:underline">About Us</a></li>
-              <li><a href="#" className="hover:underline">Contact Us</a></li>
-              <li><a href="#" className="hover:underline">Services & Plans</a></li>
-              <li><a href="#" className="hover:underline">Media & Testimonials</a></li>
-              <li><a href="#" className="hover:underline">Career</a></li>
-              <li><a href="#" className="hover:underline">How It Works</a></li>
+              <li><Link href="/about" className="hover:underline">About Us</Link></li>
+              <li><Link href="/contact" className="hover:underline">Contact Us</Link></li>
+              <li><Link href="/services" className="hover:underline">Services & Plans</Link></li>
+              <li><Link href="/media" className="hover:underline">Media & Testimonials</Link></li>
+              <li><Link href="/career" className="hover:underline">Career</Link></li>
+              <li><Link href="/how-it-works" className="hover:underline">How It Works</Link></li>
             </ul>
           </div>
 
